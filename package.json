@@ -1,0 +1,23 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "testrun": "npx cypress run",
+    "headTest": "npm run testrun --headed",
+    "chromeTest": "npm run testrun --browser chrome",
+    "recordDashBoardTest": "npx cypress run --record --key 3a1be0a1-0808-4bdc-8a7c-a57bc0d89701",
+    "frameworkTest": "npm run testrun --spec \"cypress/mytests/testframework/*\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.4"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.2",
+    "@cypress/browserify-preprocessor": "^3.0.2"
+  }
+}
