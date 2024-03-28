@@ -11,6 +11,7 @@ class HomePageEcomm
     getSecondProduct(){
         cy.wait(5000)
          cy.contains('Sauce Labs Onesie').scrollIntoView()
+         //new 
          cy.contains('Sauce Labs Onesie').click({force:true})
         cy.get('.inventory_details_back_button').click({force:true})
         return cy.get('[data-icon="shopping-cart"]').click()
