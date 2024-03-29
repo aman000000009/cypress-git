@@ -23,4 +23,13 @@ When('I added products to the cart',()=>{
 
 Then('I proceed to checkout',()=>{
     checkoutpageecomm.getValidateProduct()
+    checkoutpageecomm.getCheckout()
+    checkoutpageecomm.getFillForm()
+    checkoutpageecomm.getvalidateTotal()
+    
+})
+
+Then('I see Finish Screen',()=>{
+    checkoutpageecomm.getFinish()
+    
 })
